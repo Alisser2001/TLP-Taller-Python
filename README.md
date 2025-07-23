@@ -231,8 +231,8 @@ curl -X PATCH "http://localhost:8001/loans/1/return"
 
 La API incluye documentación automática generada por FastAPI:
 
-- **Swagger UI**: http://localhost:8000/docs
-- **ReDoc**: http://localhost:8000/redoc
+- **Swagger UI**: http://localhost:8001/docs
+- **ReDoc**: http://localhost:8001/redoc
 
 # Punto 2 - IMDB Horror Movies
 
