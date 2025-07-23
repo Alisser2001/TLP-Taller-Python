@@ -1,7 +1,6 @@
 # TLP-Taller-Python
 
-Juan Estiven Carmona Muñoz
-CC 1000567015
+Juan Estiven Carmona Muñoz - CC 1000567015
 
 # Punto 1 - API de Gestión de Biblioteca
 
