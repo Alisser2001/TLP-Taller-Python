@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  library-api:
+    build: .
+    container_name: library-api
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./app:/app/app
+      - ./tests:/app/tests
+      - ./data:/app/data
+    environment:
+      - PYTHONPATH=/app
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
