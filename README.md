@@ -1,5 +1,8 @@
 # TLP-Taller-Python
 
+Juan Estiven Carmona Muñoz
+CC 1000567015
+
 # Punto 1 - API de Gestión de Biblioteca
 
 Esta es una API para la gestión de una biblioteca desarrollada con **FastAPI** que incluye funcionalidades para manejar autores, libros y préstamos.
@@ -232,6 +235,49 @@ La API incluye documentación automática generada por FastAPI:
 - **Swagger UI**: http://localhost:8000/docs
 - **ReDoc**: http://localhost:8000/redoc
 
-## Licencia
+# Punto 2 - IMDB Horror Movies
+
+## Instalación y Ejecución
+
+### Opción 1: Con Docker (Recomendado)
+
+1. **Clonar el repositorio**
+```bash
+git clone <repository-url>
+cd horror-movies-IMDB
+```
+
+2. **Construir y ejecutar con Docker**
+```bash
+docker build -t horror-movie-analysis .
+docker run --rm horror-movie-analysis
+```
+
+### Opción 2: Instalación Local
+
+1. **Crear entorno virtual**
+```bash
+python -m venv venv
+source venv/bin/activate  # En Windows: venv\Scripts\activate
+```
+
+2. **Instalar dependencias**
+```bash
+pip install -r requirements.txt
+```
+
+## Ejecutar Pruebas
+
+### Con Docker
+```bash
+docker run --rm horror-movie-analysis python test.py
+```
+
+### Local
+```bash
+python test.py
+```
+
+# Licencia
 
 Este proyecto está bajo la Licencia MIT.
